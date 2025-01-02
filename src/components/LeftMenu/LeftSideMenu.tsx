@@ -1,11 +1,12 @@
 import { menuItems } from "../../misc/constants";
 import logo from "../../assets/svg/logo.svg";
 import SubscribeBlock from "./SubscribeBlock";
+import ControlPanel from "./ControlPanel";
 type Props = {};
 
 export default function LeftSideMenu({}: Props) {
   return (
-    <div className="px-8 py-16 bg-[#F1F1F1] flex flex-col h-full min-h-screen  overflow-hidden">
+    <div className="px-8 py-16 bg-[#F1F1F1] flex flex-col h-full min-h-[140vh]  overflow-hidden">
       <img src={logo} alt="logo" className="w-[120px]" />
       <div className="flex flex-col gap-8 font-normal text-sm mt-24">
         {menuItems.map((item) => (
@@ -19,6 +20,8 @@ export default function LeftSideMenu({}: Props) {
         ))}
       </div>
       <SubscribeBlock />
+
+      <ControlPanel />
     </div>
   );
 }
