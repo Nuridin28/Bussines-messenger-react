@@ -4,7 +4,7 @@ import { TeamMemberPropsType } from "../../../types/types";
 export default function TeamMember({ name, role, img }: TeamMemberPropsType) {
   return (
     <div className="flex gap-[14px] items-center">
-      <div className="w-1/4">
+      <div className="">
         <img src={img} alt="teamProfile" />
       </div>
       <div className="flex flex-col w-full">

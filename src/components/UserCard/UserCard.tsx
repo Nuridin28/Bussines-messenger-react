@@ -5,7 +5,7 @@ import mock from "../../assets/png/MockMess2.png";
 
 export default function UserCard() {
   return (
-    <div className="bg-[#CCCCCC] text-[#132050] flex flex-col items-center rounded-2xl py-10 px-[70px] w-fit">
+    <div className="bg-[#CCCCCC] text-[#132050] flex flex-col items-center rounded-2xl py-10 px-[70px] w-fit text-nowrap">
       <div className="flex flex-col justify-center items-center px-20">
         <img src={mock} alt="avatar" />
         <p className="text-[26px] font-medium mt-4">Megan Norton</p>
