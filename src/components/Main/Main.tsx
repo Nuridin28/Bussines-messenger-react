@@ -5,7 +5,7 @@ import TeamBlock from "../TeamBlock/TeamBlock";
 
 export default function Main() {
   return (
-    <div className="px-10 pb-[47px] w-full">
+    <div className="sm:px-10 px-2 pb-[47px] w-full">
       <Header />
       <div className="flex gap-8 mt-8 justify-between xl:flex-row flex-col">
         <div className=" xl:w-fit w-full">
