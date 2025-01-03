@@ -7,3 +7,14 @@ export type TeamMemberPropsType = {
   role: string;
   img: string;
 };
+
+export type ButtonPrimaryPropsType = {
+  additionalStyle?: string;
+  text: string;
+};
+
+export type ButtonSocialPropsType = {
+  additionalStyle?: string;
+  text: string;
+  logo: string;
+};
