@@ -1,10 +1,23 @@
+import { useEffect, useState } from "react";
 import mock from "../../assets/png/mockMess.png";
 import calendar from "../../assets/svg/calendar.svg";
 import search from "../../assets/svg/search.svg";
 import bell from "../../assets/svg/bell.svg";
 import message from "../../assets/svg/message-typing.svg";
+import updateDate from "../../misc/date";
 
 export default function Header() {
+  const [date, setDate] = useState<string>("");
+
+  useEffect(() => {
+    const currentDate = updateDate();
+    setDate(currentDate);
+    window.onload = () => {
+      const newDate = updateDate();
+      setDate(newDate);
+    };
+  }, []);
+
   return (
     <div className="bg-white mt-11 h-fit w-full md:flex hidden items-center p-3 rounded-[80px] justify-between">
       <div className="flex items-center gap-4">
@@ -19,7 +32,7 @@ export default function Header() {
 
       <div className="bg-[#F6F6F6] py-2 px-4 rounded-[30px] flex gap-3 items-center text-nowrap w-fit">
         <img src={calendar} alt="calendar" />
-        <p className="text-[#132050] text-sm font-medium">27 Feb</p>
+        <p className="text-[#132050] text-sm font-medium">{date}</p>
       </div>
 
       <div className="flex items-center justify-end">
