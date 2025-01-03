@@ -5,7 +5,7 @@ export default function Attendees() {
   return (
     <div className="mt-10 ">
       <p className="text-black font-semibold text-[24px]">Attendees</p>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between sm:flex-row flex-col">
         <div className="flex relative space-x-[-10px] mt-6 items-center">
           <img className="z-1 w-[50px] h-[50px]" src={mock} alt="profile1" />
           <img className="z-2 w-[50px] h-[50px]" src={mock} alt="profile2" />

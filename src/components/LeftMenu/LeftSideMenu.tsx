@@ -6,7 +6,7 @@ type Props = {};
 
 export default function LeftSideMenu({}: Props) {
   return (
-    <div className="px-8 py-16 bg-[#F1F1F1] flex flex-col h-full min-h-[140vh]  overflow-hidden">
+    <div className="px-8 py-16 bg-[#F1F1F1] lg:flex hidden flex-col h-full xl:min-h-[140vh] min-h-[300vh]  overflow-hidden justify-between">
       <img src={logo} alt="logo" className="w-[120px]" />
       <div className="flex flex-col gap-8 font-normal text-sm mt-24">
         {menuItems.map((item) => (
