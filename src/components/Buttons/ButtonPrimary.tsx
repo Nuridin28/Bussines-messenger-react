@@ -6,7 +6,7 @@ export default function ButtonPrimary({
 }: ButtonPrimaryPropsType) {
   return (
     <button
-      className={`w-full text-white text-base font-semibold py-4 px-[134px] rounded-lg bg-[#1570EF] mt-8 ${additionalStyle} `}
+      className={`w-full text-white text-center text-base font-semibold py-4 sm:px-[134px] px-7 rounded-lg bg-[#1570EF] text-nowrap mt-8 ${additionalStyle} `}
     >
       {text}
     </button>
